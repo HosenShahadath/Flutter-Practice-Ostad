@@ -20,9 +20,29 @@ class MyApp2 extends StatelessWidget{
         body: Container(
           child: Center(
             child: SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
+              scrollDirection: Axis.vertical,
+              child: Column(
                 children: [
+                  Text("Text-1"),
+                  Text("Text-2"),
+                  Text("Text-3"),
+                  Text("Text-4"),
+                  Text("Text-5"),
+                  Text("Text-1"),
+                  Text("Text-2"),
+                  Text("Text-3"),
+                  Text("Text-4"),
+                  Text("Text-5"),
+                  Text("Text-1"),
+                  Text("Text-2"),
+                  Text("Text-3"),
+                  Text("Text-4"),
+                  Text("Text-5"),
+                  Text("Text-1"),
+                  Text("Text-2"),
+                  Text("Text-3"),
+                  Text("Text-4"),
+                  Text("Text-5"),
                   Text("Text-1"),
                   Text("Text-2"),
                   Text("Text-3"),
