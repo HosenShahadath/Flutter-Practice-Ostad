@@ -87,7 +87,7 @@ class HomePage extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => UserInfo(),
+                              builder: (context) => UserInfo(name: 'Taufiq'),
                             ),
                           );
                         }
@@ -136,7 +136,8 @@ class HomePage extends StatelessWidget {
 }
 
 class UserInfo extends StatelessWidget {
-  const UserInfo({super.key});
+  final String name;
+  const UserInfo({super.key, required this.name});
 
   @override
   Widget build(BuildContext context) {
@@ -145,6 +146,10 @@ class UserInfo extends StatelessWidget {
         title: const Text('User Page'),
       ),
       body: Column(children: [
+        Text(
+          name,
+          style: TextStyle(fontSize: 30),
+        ),
         ElevatedButton(
           onPressed: () {
             Navigator.pop(context);
